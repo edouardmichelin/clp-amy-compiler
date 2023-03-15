@@ -1,0 +1,58 @@
+object Hotel
+
+    fn generateEmailId(str: String): String = {
+      StringImpl.toLowerCase(StringImpl.replace( StringImpl.strip(str) , ' ' , '.')) ++ "@clphotels.com"
+    }
+
+    fn isMember(str: String): Boolean = {
+      if(StringImpl.equals(str, "member")) {
+        true
+      }
+      else {
+        false
+      }
+    }
+
+    fn allotRoom(freeRooms: L.List): String = {
+      if(L.isEmpty(freeRooms)) {
+        "0"
+      }
+      else {
+        val freeRoom: Int(32) = L.head(freeRooms);
+        Std.printString("Would you like the room " ++ (Std.intToString(freeRoom)) ++ "? (Yes/No)" );
+        val res: String = Std.readString();
+        if( StringImpl.equals( StringImpl.strip(StringImpl.toLowerCase(res)) , "yes" ) ){
+
+          (Std.intToString(freeRoom))
+
+        }
+        else {
+          allotRoom(L.tail(freeRooms))
+        }
+      }
+    }
+
+    Std.printString("Please enter your full name: ");
+    val name: String = Std.readString();
+    val emailid: String = generateEmailId(name);
+    val freeRooms: L.List = L.Cons(321 , L.Cons(102 , L.Cons(401 , L.Nil())));
+    Std.printString("Generated email id: " ++ emailid ++ " for "++name);
+    Std.printString("Enter your status (member/guest)");
+    val member: String = Std.readString();
+    if(isMember(member)){
+      Std.printString("Since you are a member, we give you 10% discount")
+    }
+    else {
+      Std.printString("We have a guest room for you")
+    };
+    val roomAllotted: String = (allotRoom(freeRooms));
+    if( StringImpl.equals(roomAllotted , "0") ){
+      Std.printString("Unfortunately, we don't have any rooms available. Please check with us in a couple hours.")
+    }
+    else {
+      Std.printString("Alotted the room " ++ roomAllotted ++ ". Enjoy your stay ^-^")
+    }
+
+
+
+end Hotel

@@ -1,0 +1,11 @@
+object EscapeChars
+
+    val newLine: Char = '\n';
+    Std.printChar(newLine);
+    Std.printChar(newLine);
+    val singleQuote : Char = '\'';
+    Std.printChar(singleQuote);
+    Std.printChar(singleQuote)
+    // val invalidEscapeChar : Char = '\p'
+
+end EscapeChars

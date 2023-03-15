@@ -1,0 +1,6 @@
+object HelloChars
+  val c: Char = 'x';
+  val d: Char = 'e';
+  Std.printBoolean(c == d);
+  Std.printString(Std.charToString(c) ++ Std.charToString(' ') ++ Std.charToString(d))
+end HelloChars

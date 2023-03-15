@@ -1,0 +1,5 @@
+object StringNewLine
+
+    Std.printString("Hello " ++ Std.charToString('\n') ++ "World!")
+
+end StringNewLine

@@ -1,0 +1,3 @@
+object Strip
+  Std.printString(StringImpl.strip("  abcdefsg  "))
+end Strip

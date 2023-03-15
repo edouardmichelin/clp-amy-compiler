@@ -1,0 +1,3 @@
+object LowerCase
+  Std.printString( StringImpl.toLowerCase("ABCaa234__Ssc") )
+end LowerCase

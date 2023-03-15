@@ -1,0 +1,3 @@
+object replace
+  Std.printString(StringImpl.replace("abcdefsaga", 'a' , 'b'))
+end replace

@@ -1,0 +1,29 @@
+object NamePrinter
+  fn capitalize(str : String) : String = {
+    //Std.printString("String to capitalize is " ++ str);
+    val length : Int(32) = StringImpl.length(str);
+    //Std.printString("Length is " ++ Std.intToString(length));
+    if (length == 0) {
+      ""
+    } else {
+      if (length == 1) {
+        StringImpl.toUpperCase(str)
+      } else {
+        val firstLetter : Char = StringImpl.charAt(str, 0);
+        val rest : String = StringImpl.substring(str, 1, length);
+        val upper : String = StringImpl.toUpperCase(Std.charToString(firstLetter));
+        upper ++ rest
+      }
+    }
+  }
+  
+
+  Std.printString("What is your last name?");
+  val lastName : String = Std.readString();
+  //Std.printString("String is " ++ lastName);
+  val stripped : String = StringImpl.strip(lastName);
+  Std.printString("Stripped name is " ++ stripped);
+  val formattedLastName : String = capitalize(stripped);
+  Std.printString("Your last name is: '" ++ formattedLastName ++ "'")
+
+end NamePrinter

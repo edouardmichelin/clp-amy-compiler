@@ -1,0 +1,6 @@
+object Hello2
+  Std.printString( "shankar == eduoard ?" );
+  Std.printBoolean( StringImpl.equals("shankar" , "eduoard") );
+  Std.printString( "metacircular == metacircular ?" );
+  Std.printBoolean( StringImpl.equals("metacircular" , "metacircular") )
+end Hello2

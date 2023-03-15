@@ -1,0 +1,5 @@
+object IndexOf
+  val c: Char = 'x';
+  val d: Char = 'e';
+  Std.printInt( StringImpl.indexOf("axeexx" , d) )
+end IndexOf

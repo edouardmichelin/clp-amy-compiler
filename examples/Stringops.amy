@@ -1,0 +1,15 @@
+object StringOps
+
+  Std.printString("Length of string <abcdefsg> ");
+  Std.printInt(StringImpl.length("abcdefsg"));
+
+  Std.printString("Replace a with b in  string <abcdefsaga> ");
+  Std.printString(StringImpl.replace("abcdefsaga", 'a' , 'b'));
+
+  Std.printString("Strip whitespace   string <  abcdefsg  > ");
+  Std.printString("abcdefsg");
+
+  Std.printString("To lower case :   string <ABCaa234__Ssc> ");
+  Std.printString( StringImpl.toLowerCase("ABCaa234__Ssc") )
+
+end StringOps

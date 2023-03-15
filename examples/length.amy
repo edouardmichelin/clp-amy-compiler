@@ -1,0 +1,3 @@
+object lent
+  Std.printInt(StringImpl.length("abcdefsg"))
+end lent

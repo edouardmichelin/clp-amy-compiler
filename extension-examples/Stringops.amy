@@ -1,0 +1,33 @@
+object StringOps
+
+  Std.printString("Length of string <abcdefsg> ");
+  Std.printInt(StringImpl.length("abcdefsg"));
+
+  Std.printString("<abcdefsaga> == <abcdefsagaabc> ?? ");
+  Std.printBoolean(StringImpl.equals("abcdefsaga", "abcdefsagaabc"));
+
+  Std.printString("<abcdefsaga> == <abcdefsaga> ?? ");
+  Std.printBoolean(StringImpl.equals("abcdefsaga", "abcdefsaga"));
+
+  Std.printString("charAt ( <abcdefsaga> , 3 ) ");
+  Std.printChar(StringImpl.charAt("abcdefsaga", 3));
+
+  Std.printString("charAt ( <abcdefsaga> , 25 ) ");
+  Std.printChar(StringImpl.charAt("abcdefsaga", 25));
+
+  Std.printString("substring ( <abcdefsaga> , 3 , 8 ) ");
+  Std.printString(StringImpl.substring("abcdefsaga", 3 , 8));
+
+  Std.printString("substring ( <abcdefsaga> , 3 , 25 ) ");
+  Std.printString(StringImpl.substring("abcdefsaga", 3 , 25));
+
+  Std.printString("Strip whitespace   string <  abcdefsg  > ");
+  Std.printString(StringImpl.strip("  abcdefsg  "));
+
+  Std.printString("To lower case :   string <ABCaa234__Ssc> ");
+  Std.printString( StringImpl.toLowerCase("ABCaa234__Ssc") );
+
+  Std.printString("indexOf z in  string <aaazazaa> ");
+  Std.printInt(StringImpl.indexOf("aaazazaa", 'z' ))
+
+end StringOps

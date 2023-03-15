@@ -1,0 +1,3 @@
+object UpperCase
+  Std.printString( StringImpl.toUpperCase("Hello " ++ "world!") )
+end UpperCase

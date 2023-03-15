@@ -1,0 +1,3 @@
+object CharAt
+  Std.printString( Std.charToString( StringImpl.charAt("abc" , 2) )  )
+end CharAt

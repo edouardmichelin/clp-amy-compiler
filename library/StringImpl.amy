@@ -1,0 +1,48 @@
+/** This module contains basic functionality for Amy,
+  * including stub implementations for some built-in functions
+  * (implemented in WASM or JavaScript)
+  */
+object StringImpl 
+  
+
+  fn f2(i: Int(32)): Unit = {
+    error("") // Stub implementation
+  }
+
+  fn length(s: String): Int(32) = {
+    error("") // Stub implementation
+  }
+
+  fn substring(s: String, start: Int(32), stop: Int(32)): String = {
+    error("") // Stub implementation
+  }
+
+  fn replace(s: String , c1: Char , c2: Char ): String = {
+    error("") // Stub implementation
+  }
+
+  fn strip(s: String ): String = {
+    error("") // Stub implementation
+  }
+  fn toLowerCase(s: String ): String = {
+    error("") // Stub implementation
+  }
+
+  fn toUpperCase(s: String ): String = {
+    error("") // Stub implementation
+  }
+
+  fn charAt(s: String, index: Int(32) ): Char = {
+    error("") // Stub implementation
+  }
+
+  fn indexOf(s: String, search: Char ): Int(32) = {
+    error("") // Stub implementation
+  }
+
+  fn equals(s1: String, s2: String): Boolean = {
+    error("") // Stub implementation
+  }
+
+  
+end StringImpl
